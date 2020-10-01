@@ -1,0 +1,39 @@
+.main-text{
+  font-family: trebuchet, helvetica, sans-serif;
+  color: black;
+}
+.button {
+  background-color:red;
+  color:black;
+  border:none;
+  padding: 15px;
+  text-align: center;
+  float: left;
+  width: 15%;
+  box-sizing: border-box;
+}
+.button:hover{
+  background-color: black;
+  color:red;
+}
+.main-header{
+  font-family: trebuchet, helvetica, sans-serif;
+}
+.main-header a{
+  float:left;
+}
+.menu{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-family: trebuchet, helvetica, sans-serif;
+  font-weight: bold;
+}
+a:hover{
+  color:red
+}
+a:active{
+  color:green;
+}
