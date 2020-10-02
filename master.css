@@ -1,5 +1,5 @@
 body{
-  background-color: white;
+  background-color:#f4f4f4;
   font-family: trebuchet, helvetica, sans-serif;
   color: black;
 }
@@ -11,74 +11,77 @@ body{
 .clr{
   clear: both;
 }
-.button {
-  background-color:red;
-  color:black;
-  padding: 15px;
-  text-align: center;
+#main-header{
+  height: 80px;
+}
+#main-header a{
   float: left;
-  width: 15%;
-  box-sizing: border-box;
+  width:30%;
 }
-.button:hover{
-  background-color: black;
-  color:red;
-}
-.main-header{
-  font-family: trebuchet, helvetica, sans-serif;
-}
-.main-header a{
-  float:left;
-  margin-left: 150px;
-}
-.menu{
-  list-style-type: none;
-}
-a{
-  text-decoration: none;
-  color: black;
-  font-family: trebuchet, helvetica, sans-serif;
-  font-weight: bold;
-}
-a:hover{
-  color:red
-}
-a:active{
-  color:green;
-}
-#main-pic{
-  float: left;
-  width: 40%;
-  box-sizing: border-box;
-}
-#bodytext{
+#main-header h1{
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   float: right;
-  width: 60%;
-  text-align: left;
+  width: 50%;
+}
+#profile{
+  float: right;
+  width:40%;
+  padding: none;
   box-sizing: border-box;
+}
+#content{
+  float: left;
+  width: 60%;
+  text-align: right;
+  margin-bottom: none;
+  box-sizing: border-box;
+}
+#content h1{
+  font-size: 50px;
+  font-family: verdana;
+  padding-top: 10px;
+}
+#content h2{
+  font-style: italic;
+}
+#content p{
 }
 #main-vid{
-  float: right;
-  width: auto;
-  margin-right: 200px;
+  float: left;
+  margin-top: 40px;
   box-sizing: border-box;
 }
 #navbar{
-  background-color: red;
-  color:black;
+  background-color: black;
+  border: 2px solid #40E0D0;
+  outline: 5px solid red;
 }
 #navbar ul{
   padding: 0;
+  margin: 0;
+  overflow: hidden;
   list-style: none;
 }
 #navbar li{
   display: inline;
+  float: left;
 }
 #navbar a{
-  color: black;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 18px;
-  padding-right: 25px;
+  font-family: helvetica;
+  display: block;
+  background-color: red;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  margin-right: 20px;
+}
+#navbar a:hover{
+  color: red;
+
+  background-color: white;
 }
 #main-footer{
   background: red;
@@ -87,8 +90,37 @@ a:active{
   text-align: center;
   padding: 10px;
   margin-top: 40px;
+  border: 2px solid #40E0D0;
+  outline: 5px solid black;
 }
 #main-footer li{
   display: inline;
   padding-right: 10px;
+}
+
+@media screen and (max-width: 400px){
+  #navbar a{
+    float: none;
+    width: 100%;
+  }
+  #content{
+    float: none;
+    width: 100%
+  }
+  #profile{
+    float: none;
+    width: 100%;
+  }
+  #main-footer{
+    float: none;
+    width: 100%;
+  }
+  #main-vid{
+    float: none;
+    width: 100%;
+  }
+  #main-header h1{
+    float: none;
+    width: 100%;
+  }
 }
