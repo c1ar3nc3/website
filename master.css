@@ -20,7 +20,8 @@ body{
   clear: both;
 }
 #main-header{
-  height: 80px;
+  height: 100px;
+  background-color: black;
 }
 #main-header a{
   float: left;
