@@ -3,19 +3,16 @@
   --dark: #000;
   --light: red;
 }
-
 html{
   box-sizing: border-box;
   font-family: trebuchet, helvetica, sans-serif;
   color: var(--dark);
 }
-
 body{
   background-color:#f4f4f4;
   margin: 30px 50px;
   line-height: 1.4;
 }
-
 .btn{
   background: var(--light);
   color: var(--dark);
@@ -23,21 +20,21 @@ body{
   text-decoration: none;
   border: 0;
 }
-
 img {
   max-width: 100%;
 }
-
 .wrapper{
   display: grid;
-  grid-gap: 20px
+  grid-gap: 20px;
 }
 
+/*   main header  */
 .main-header {
     display: grid;
     grid-gap: 20px;
     grid-template-areas:
-      'logo title title littleman'
+      'logo title littleman';
+    justify-content: center;
 }
 #logo{
   grid-area: logo;
@@ -48,10 +45,11 @@ img {
 #littleman{
   grid-area: littleman;
 }
-
+/*    navigation   */
 #navbar{
   background-color: #40E0D0;
   text-transform: uppercase;
+  font-weight: bold;
   border: 3px solid black;
 }
 #navbar ul{
@@ -65,22 +63,25 @@ img {
   text-decoration: none;
   font-family: helvetica;
   display: block;
-  background-color: black;
-  color: red;
+  background-color: red;
+  color: black;
   text-align: center;
   padding: 0.8rem;
 }
 #navbar a:hover{
-  color: black;
-  background-color: red;
+  color: red;
+  background-color: black;
 }
-
+/*   showcase   */
 .main-section {
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
     'top-box-a top-box-a profile'
     'top-box-a top-box-a top-box-b';
+}
+.main-section img{
+  min-width: 300px;
 }
 .profile{
   grid-area: profile;
@@ -94,7 +95,7 @@ img {
   margin-top: 1rem;
 }
 .profile h2{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding-top: 0;
 }
 .profile h3{
@@ -117,7 +118,7 @@ img {
   justify-content: space-between;
   flex-direction: row;
 }
-
+/*  info boxes  */
 .boxes{
   display: grid;
   grid-gap: 20px;
@@ -128,27 +129,72 @@ img {
   text-align: center;
   padding: 1.5rem 2rem;
 }
-
-
-
-#main-footer{
-  background: red;
-  color: black;
+/*   My Story  */
+.info{
+  display: grid;
+  background-color: white;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  padding: 2rem 6rem;
   text-align: center;
-  font-size: 13px;
-  font-weight: bold;
-  padding: 10px;
-  margin-top: 40px;
-  border: 2px solid #40E0D0;
-  outline: 5px solid black;
 }
-#main-footer li{
+.info h1{
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+.info p{
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+/*  gallery  */
+.gallery{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.gallery img{
+  width: 100%;
+}
+/*    footer    */
+.main-footer{
+  display: grid;
+  grid-template-areas:
+   'left-foot copyright right-foot';
+  justify-content: center;
+  margin-top: 2rem;
+  color: black;
+  background: #40E0D0;
+  font-size: 0.8rem;
+  padding: 1rem;
+  border: 3px solid black;
+}
+.left-foot {
+  grid-area: left-foot;
+}
+.copyright {
+  display: flex;
+  align-items: flex-end;
+  grid-area: copyright;
+  padding-top: 1rem;
+  padding-left:1rem;
+  padding-right: 1rem;
+}
+.right-foot {
+  grid-area: right-foot;
+}
+.main-footer ul{
+  list-style: none;
+  padding: 0;
+}
+.main-footer li{
   display: inline;
 }
+.main-footer a{
+  text-decoration: none;
+}
 .fa{
-  padding: 8px;
-  font-size: 40px;
-  width: 10px;
+  padding: 1rem;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -171,4 +217,31 @@ img {
 .fa-instagram {
   background-image: linear-gradient(#515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
   color: white;
+}
+
+@media(max-width: 700px) {
+  .main-section {
+    grid-template-areas:
+      'top-box-a'
+      'profile'
+      'top-box-b';
+  }
+  .profile h1{
+    font-size: 2rem;
+  }
+  .profile h2{
+    font-size: 1.5rem;
+  }
+  .profile p{
+    font-size: 1rem;
+  }
+  .navbar ul{
+    grid-template-columns: 1fr;
+  }
+  .main-footer{
+    grid-template-areas:
+      'left-foot'
+      'right-foot'
+      'copyright';
+  }
 }
