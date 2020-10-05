@@ -30,11 +30,14 @@ img {
 
 /*   main header  */
 .main-header {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas:
-      'logo title littleman';
-    justify-content: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'logo title littleman';
+  justify-content: center;
+}
+.main-header img{
+  max-height: 100px;
 }
 #logo{
   grid-area: logo;
@@ -47,14 +50,15 @@ img {
 }
 /*    navigation   */
 #navbar{
-  background-color: #40E0D0;
+  background-color: red;
   text-transform: uppercase;
+  padding: 0 1rem;
   font-weight: bold;
   border: 3px solid black;
 }
 #navbar ul{
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 30px;
   padding: 0;
   list-style: none;
   grid-template-columns: repeat(4, 1fr);
@@ -63,8 +67,9 @@ img {
   text-decoration: none;
   font-family: helvetica;
   display: block;
-  background-color: red;
-  color: black;
+  background-color: #40E0D0;
+  color: red;
+  border: 1px solid black;
   text-align: center;
   padding: 0.8rem;
 }
@@ -141,6 +146,7 @@ img {
 .info h1{
   font-size: 3rem;
   margin-top: 1rem;
+  margin-bottom: 0;
 }
 .info p{
   font-size: 1.3rem;
@@ -163,7 +169,9 @@ img {
   justify-content: center;
   margin-top: 2rem;
   color: black;
-  background: #40E0D0;
+  font-variant: small-caps;
+  font-weight: bold;
+  background: red;
   font-size: 0.8rem;
   padding: 1rem;
   border: 3px solid black;
@@ -220,6 +228,13 @@ img {
 }
 
 @media(max-width: 700px) {
+  .main-header {
+    grid-template-areas:
+      'logo littleman'
+      'title';
+  }
+  .main-header img{
+  }
   .main-section {
     grid-template-areas:
       'top-box-a'
@@ -240,8 +255,14 @@ img {
   }
   .main-footer{
     grid-template-areas:
-      'left-foot'
-      'right-foot'
+      'left-foot right-foot'
       'copyright';
+  }
+  .main-footer ul{
+    justify-content: center;
+  }
+  .fa{
+    padding: 0.5rem;
+    padding: 0.3rem;
   }
 }
