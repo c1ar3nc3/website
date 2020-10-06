@@ -31,22 +31,11 @@ img {
 /*   main header  */
 .main-header {
   display: grid;
-  grid-gap: 10px;
-  grid-template-areas:
-    'logo title littleman';
   justify-content: center;
-}
-.main-header img{
-    max-height: 100px;
-}
-#logo{
-  grid-area: logo;
+  max-height: 100px;
 }
 #title{
   grid-area: title;
-}
-#littleman{
-  grid-area: littleman;
 }
 /*    navigation   */
 #navbar{
@@ -55,10 +44,12 @@ img {
   padding: 0 1rem;
   font-weight: bold;
   border: 3px solid black;
+  outline: 4px groove #40E0D0;
 }
 #navbar ul{
   display: grid;
-  grid-gap: 30px;
+  justify-content: center;
+  grid-gap: 10px;
   padding: 0;
   list-style: none;
   grid-template-columns: repeat(4, 1fr);
@@ -70,7 +61,7 @@ img {
   color: white;
   text-shadow: 2px 4px 8px #40E0D0;
   text-align: center;
-  padding: 0.8rem 0;
+  padding: 16px 0;
 }
 #navbar a:hover{
   background-image: linear-gradient(yellow, white);
@@ -177,6 +168,7 @@ img {
   font-size: 0.8rem;
   padding: 1rem;
   border: 3px solid black;
+  outline: 4px groove #40E0D0;
 }
 .left-foot {
   grid-area: left-foot;
@@ -232,12 +224,11 @@ img {
 
 @media(max-width: 700px) {
   body {
-    margin: 0;
+    margin: 3px;
   }
   .main-header {
-    grid-template-areas:
-      'title'
-      'logo littleman';
+    width: 90%;
+    padding: 0 30px;
   }
 #title {
     padding-top: 35px;
@@ -249,10 +240,13 @@ img {
       'top-box-b';
   }
   .profile h1{
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .profile h2{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+  .profile h3{
+    font-size: 1.2rem;
   }
   .profile p{
     font-size: 1rem;
