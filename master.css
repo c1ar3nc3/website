@@ -228,10 +228,11 @@ img {
 
 @media(max-width: 700px) {
   body {
+    width: 100%
+    height:auto;
     margin: 3px;
   }
   .main-header {
-    width: 100%;
     padding: 0 3px;
   }
 #title {
