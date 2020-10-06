@@ -227,8 +227,8 @@ img {
     margin: 3px;
   }
   .main-header {
-    width: 90%;
-    padding: 0 30px;
+    width: 100%;
+    padding: 0 3px;
   }
 #title {
     padding-top: 35px;
