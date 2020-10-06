@@ -39,33 +39,37 @@ img {
 }
 /*    navigation   */
 #navbar{
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  background-image: linear-gradient(red, black);
   text-transform: uppercase;
-  padding: 0 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   border: 3px solid black;
   outline: 4px groove #40E0D0;
 }
 #navbar ul{
-  display: grid;
-  justify-content: center;
-  grid-gap: 10px;
   padding: 0;
+  margin: 0;
   list-style: none;
-  grid-template-columns: repeat(4, 1fr);
+}
+#navbar li{
+  display: inline-block;
+  padding: 10px;
 }
 #navbar a{
   text-decoration: none;
-  display: block;
   background-color: black;
+  box-shadow: 1px 2px 4px #40E0D0;
   color: white;
-  text-shadow: 2px 4px 8px #40E0D0;
   text-align: center;
-  padding: 16px 0;
+  padding: 0px 5%;
+  border-radius: 5%;
 }
 #navbar a:hover{
-  background-image: linear-gradient(yellow, white);
-  color: black;
+  color: #40E0D0;
 }
 /*   showcase   */
 .main-section {
@@ -164,7 +168,7 @@ img {
   margin-top: 2rem;
   color: white;
   font-variant: small-caps;
-  background: red;
+  background-image: linear-gradient(black, red);
   font-size: 0.8rem;
   padding: 1rem;
   border: 3px solid black;
@@ -231,7 +235,7 @@ img {
     padding: 0 3px;
   }
 #title {
-    padding-top: 35px;
+    padding-top: 25px;
   }
   .main-section {
     grid-template-areas:
@@ -251,9 +255,9 @@ img {
   .profile p{
     font-size: 1rem;
   }
-  .navbar ul{
-    grid-template-columns: 1fr;
-  }
+  .navbar {
+    padding: 0;
+ }
   .main-footer{
     grid-template-areas:
       'left-foot right-foot'
