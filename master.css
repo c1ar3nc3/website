@@ -164,27 +164,34 @@ img {
 /* ArtStarts Page */
 .artstarts {
   display: flex;
+  grid-gap: 20px;
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin-top: 20px;
 }
 .artlogo {
   padding: 0 5%;
 }
 .art_a{
-  padding: 3% 2%;
+  padding: 30px 2%;
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   outline: 5px solid red;
 }
 .art_b{
-  padding: 3% 2%;
+  padding: 30px 2%;
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   outline: 5px solid red;
 }
 .reviews{
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+#performance{
+  font-size: 2.5rem;
 }
 
 /*   Media Page  */
