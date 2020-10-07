@@ -159,6 +159,25 @@ img {
 .gallery img{
   width: 100%;
 }
+
+/* ArtStarts Page */
+.artstarts {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.reviews{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+/*   Media Page  */
+.slideshow {
+  text-align: center;
+}
+
 /*    footer    */
 .main-footer{
   display: grid;
