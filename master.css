@@ -16,6 +16,7 @@ body{
 .btn{
   background: var(--light);
   color: var(--dark);
+  font-weight: bold;
   padding: 0.5rem 1rem;
   text-decoration: none;
   border: 0;
@@ -162,10 +163,23 @@ img {
 
 /* ArtStarts Page */
 .artstarts {
-  display: grid;
-  justify-content: center;
+  display: flex;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  justify-content: center;
+}
+.artlogo {
+  padding: 0 5%;
+}
+.art_a{
+  padding: 3% 2%;
+  background-color: white;
+  outline: 5px solid red;
+}
+.art_b{
+  padding: 3% 2%;
+  background-color: white;
+  outline: 5px solid red;
 }
 .reviews{
   display: grid;
@@ -279,6 +293,12 @@ img {
  .slideshow img{
    width: auto;
    max-height: 375px;
+ }
+ .artstarts h1{
+   font-size: 1rem;
+ }
+ #performance{
+   font-size: 1.2rem;
  }
   .main-footer{
     grid-template-areas:
