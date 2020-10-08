@@ -60,6 +60,7 @@ img {
   font-weight: bold;
   border: 3px solid black;
   outline: 4px groove #40E0D0;
+  max-height: 100px;
 }
 #navbar ul{
   padding: 0;
