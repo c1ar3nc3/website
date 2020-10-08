@@ -216,19 +216,36 @@ img {
 .slideshow {
   text-align: center;
 }
+.slideshow h1{
+  text-shadow: 1px 1px red;
+  margin-top: 0;
+}
 
 /*   Contact Page   */
 .booking {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      'book email artemail';
     text-align: center;
     align-items: center;
+    padding: 0 20px;
 }
-.booking h1{
+.booking h1 {
   text-shadow: 0 0 3px red, 0 0 5px red;
+  font-size: 3rem;
 }
 .booking p {
     text-align: center;
+}
+.book{
+  grid-area: book;
+}
+.email{
+  grid-area: email;
+  padding: 0 10%;
+}
+.artemail{
+  grid area: artemail;
 }
 
 /*    footer    */
@@ -345,7 +362,7 @@ img {
      'art_b';
  }
  .artstarts h1{
-   font-size: 1rem;
+   font-size: 0.8rem;
  }
  #performance{
    font-size: 1.2rem;
@@ -353,6 +370,13 @@ img {
  .slideshow img {
    height: 250px;
    width: auto;
+ }
+ .booking {
+   display: grid;
+   grid-template-areas:
+     'book'
+     'email'
+     'artemail';
  }
   .main-footer{
     padding: 0px;
@@ -381,3 +405,8 @@ body  {width: 100%;
 .navbar a{
   padding: 0%;
 }
+.artstarts {
+  grid-template-areas:
+    'artlogo'
+    'art_a'
+    'art_b';
