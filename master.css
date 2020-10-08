@@ -41,12 +41,11 @@ img {
 
 /*   main header  */
 .main-header {
-  display: grid;
-  justify-content: center;
-  max-height: 100px;
-}
-#title{
-  grid-area: title;
+  height: 100px;
+  background-image: url(images/banner.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /*    navigation   */
 #navbar{
@@ -191,14 +190,14 @@ img {
 }
 .art_a{
   grid-area: art_a;
-  padding: 30px 2%;
+  padding: 30px 2rem;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   outline: 5px solid black;
 }
 .art_b{
   grid-area: art_b;
-  padding: 30px 2%;
+  padding: 30px 2rem;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   outline: 5px solid black;
@@ -210,6 +209,7 @@ img {
 }
 #performance{
   font-size: 2.5rem;
+  text-decoration: underline;
 }
 
 /*   Media Page  */
@@ -362,7 +362,7 @@ img {
      'art_b';
  }
  .artstarts h1{
-   font-size: 0.8rem;
+   font-size: 1.5rem;
  }
  #performance{
    font-size: 1.2rem;
