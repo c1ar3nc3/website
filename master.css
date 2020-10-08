@@ -20,6 +20,7 @@ body{
   padding: 0.5rem 1rem;
   text-decoration: none;
   border: 0;
+  outline: 4px groove #40E0D0;
 }
 .contactbutton {
   padding: 0.5rem 1rem;
